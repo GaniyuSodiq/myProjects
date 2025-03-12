@@ -14,18 +14,22 @@
 
         let multiply = (a = 3, b = 2) => a * b;
 
-        // function capitalize(text) {
-        //     let capText = text[0].toUpperCase() + text.subsctring(1);
-        //     return capText;
-        // }
-        // publication[0].toUpperCase() + publication.substring(1);
-
         let lastLetter = (text) => text.slice(-1);
+
+        function capitalize(text) {
+           return String(text).charAt(0).toUpperCase() + String(text).slice(1);
+            // return String(text).charAt(0).toUpperCase() + String(text).slice(1);
+
+            // return String(text)[0].toUpperCase() + String(text).subsctring(1);
+            
+        }
+        
 
         add7(7);
         multiply();
-        // capitalize("adio");
         lastLetter("humble");
+        capitalize("adio");
+        
     </script>
 </body>
 </html>
