@@ -15,7 +15,32 @@
     </div>
 
     <script>
-        
+        const unoderedList = document.querySelector("ul");
+        const addBtn = document.querySelector("button");
+        const itemInput = document.querySelector("input");
+
+        addBtn.addEventListener("click", () =>{
+            let inputValue = itemInput.value;
+            itemInput.value = "";
+
+            const listItem = document.createElement("li");
+            const listItemSpan = document.createElement("span");
+            const listItemBtn = document.createElement("button");
+
+            listItem.appendChild(listItemSpan);
+            listItem.appendChild(listItemBtn);
+
+            listItemSpan.textContent = inputValue;
+            listItemBtn.textContent = "Delete";
+
+            unoderedList.appendChild(listItem);
+
+            listItemBtn.addEventListener("click", () => {
+                listItem.remove();
+            })
+
+            itemInput.focus();
+        });
     </script>
 </body>
 </html>
