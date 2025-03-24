@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
-        let userName = prompt("Who is there", "what is your name");
+        // ASS 2: Write a function that simply repeats the string a given number of times:
+        // repeatString('hey', 3) // returns 'heyheyhey'
 
-        if (userName === "Admin"){
-            let userPassword = prompt("What is your password");
-            if (userPassword === "TheMaster"){
-                alert("Welcome");
-            } else if (userPassword === ""){
-                alert("Cancelled")
-            } else {
-                alert("Wrong password")
+            // const repeatString = function (word, times) {
+            //     if (times < 0) return "ERROR";
+            //     let string = "";
+            //     for (let i = 0; i < times; i++) {
+            //         string += word;
+            //     }
+            //     return string;
+            // };
+
+
+        // ASS 3: Pretty simple, write a function called reverseString that returns its input, reversed!
+        // reverseString('hello there') // returns 'ereht olleh'
+            // const reverseString = function (word) {
+            //     let wordReversed = word.split("").reverse().join("");
+            //     return wordReversed;
+            // };
+
+            // reverseString(word);
+
+
+        // ASS 4:  Implement a function that takes an array and some other arguments then 
+        // removes the other arguments from that array:
+        // removeFromArray([1, 2, 3, 4], [3, 2]); // should remove 3, 2 and return [1, 4]
+
+            // const removeFromArray = function (array, ...args) {
+            //     const newArray = [];
+            //     array.forEach((item) => {
+            //         if (!args.includes(item)) {
+            //             newArray.push(item);
+            //         }
+            //     });
+            //     return newArray;
+            // };
+
+            //     OR
+
+            const removeFromArray = function(array, ...args) {
+              return array.filter(val => !args.includes(val))
             }
-        } else if (userName === ""){
-            alert("cancelled");
-        } else {
-            alert("I dont know you");
-        }
+
+            console.log(removeFromArray([1,2,3,4], 3, 2,));
+
+            //  console.log(removeFromArray([1,2,3,4], [3, 2]));
 
 
-
-
-        
     </script>
+
 </body>
+
 </html>
