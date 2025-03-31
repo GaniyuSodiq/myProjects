@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#container {
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+#inputBox{
+    width: 99%;
+    height: 50px;
+    /* border: none; */
+    text-align: right;
+    font-size: 150%;
+    padding: 0;
+}
+
+.col {
+    width: 70px;
+    height: 50px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.col:hover {
+    background-color: aliceblue;
+}
+
+.col:active {
+    background-color: antiquewhite;
+}
+
+#equals{
+    background-color: midnightblue;
+    color: white;
+}
+
+#equals:hover{
+    background-color: rgb(18, 18, 80);
+}
