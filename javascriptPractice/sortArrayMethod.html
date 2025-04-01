@@ -37,11 +37,27 @@
     // }
     // console.log(filteredRangeInPlace(arr, 1, 4));
 
-    let arr = [5, 2, 1, -10, 8];
-    // arr.sort((a, b) => a - b).reverse();
-    // better
-    arr.sort((a, b) => b - a);
-    console.log(arr)
+    // let arr = [5, 2, 1, -10, 8];
+    // // arr.sort((a, b) => a - b).reverse();
+    // // better
+    // arr.sort((a, b) => b - a);
+    // console.log(arr)
+
+    // let arr = ["HTML", "JavaScript", "CSS"];
+    // sorted regardless of any special characters
+    // let sorted = arr.sort((a, b) => a.localeCompare(b));
+    // console.log(arr);
+    // console.log(sorted);
+
+    // to retun the arr without modifying it,
+    // we make a copy of the array using slice()
+
+    let arr = ["HTML", "JavaScript", "CSS"];
+    function sorted(arr) {
+        return arr.slice().sort()
+    }
+    console.log(sorted(arr));
+    console.log(arr);
     </script>
 </body>
 </html>
