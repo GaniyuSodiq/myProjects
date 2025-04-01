@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Trippled Evens</title>
+</head>
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+        console.log(arr);
+
+        let mappedArray = arr.map((num) => num * 3);
+        console.log(mappedArray);
+
+        let filteredArray = mappedArray.filter((num) => num % 2 === 0);
+        console.log(filteredArray);
+
+        let reducedArray = filteredArray.reduce((total, currentItem) => {return total + currentItem}, 0);
+        console.log(reducedArray);
+    </script>
+</body>
+</html>
