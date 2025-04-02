@@ -52,12 +52,27 @@
     // to retun the arr without modifying it,
     // we make a copy of the array using slice()
 
-    let arr = ["HTML", "JavaScript", "CSS"];
-    function sorted(arr) {
-        return arr.slice().sort()
+    // let arr = ["HTML", "JavaScript", "CSS"];
+    // function sorted(arr) {
+    //     return arr.slice().sort()
+    // }
+    // console.log(sorted(arr));
+    // console.log(arr);
+
+    // SIMPLE AND RAW CALCULATOR
+    let calcu = function (str) {
+      let newStr = str.split(" ");
+      return newStr
     }
-    console.log(sorted(arr));
-    console.log(arr);
+
+    let calculate = calcu("1 + 2");
+
+    console.log(calculate);
+    console.log(+calculate[0]);
+    console.log(calculate[1]);
+    console.log(+calculate[2]);
+    let addThem = +calculate[0] + +calculate[2];
+    console.log("Add Them = " + addThem);
     </script>
 </body>
 </html>
