@@ -116,6 +116,17 @@
     console.log(arr[1].name); // Mary
     console.log(arr[2].name); // Pete
 
+    let getAverageAge = function(arr) {
+        return (arr.reduce((sum, user) => sum + user.age, 0)) / arr.length;
+        // let numUsers = arr.length;
+
+        // console.log(sumAge);
+        // console.log(numUsers);
+        // // let averageAge = 0;
+        // return sumAge / numUsers;
+    }
+
+    console.log(getAverageAge(arr));
     </script>
 </body>
 </html>
