@@ -1,10 +1,30 @@
+
+@font-face {
+    font-family: 'chunkfiveregular';
+    src: url('chunkfive-regular-webfont.woff2') format('woff2'),
+         url('chunkfive-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('quicksand-regular-webfont.woff2') format('woff2'),
+         url('quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* General setup */
 
 html {
     font-size: 10px;
     margin: 0;
-    font-family: sans-serif;
-  }
+    font-family: "quicksandregular", sans-serif;
+}
   
   body {
     width: 80%;
@@ -15,10 +35,12 @@ html {
   /* Typography */
   
   h1 {
+    font-family: "chunkfiveregular", sans-serif;
     font-size: 3.2rem;
   }
   
   h2 {
+    font-family: "chunkfiveregular", sans-serif;
     font-size: 2.4rem;
   }
   
